@@ -1,3 +1,5 @@
+#!/home/tfermendzin/VENV/py3_venv/bin/python3
+
 from netmiko import ConnectHandler
 from getpass import getpass
 
