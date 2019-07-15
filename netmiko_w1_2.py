@@ -23,6 +23,6 @@ devices = [device1, device2]
 
 for device in devices:
     print('~'*79)
-    print('Connecting to {}'.format(device))
+    print('Connecting to {}'.format(device['host']))
     net_connect = ConnectHandler(**device)
     print(net_connect.find_prompt())
