@@ -3,18 +3,21 @@
 from netmiko import ConnectHandler
 from getpass import getpass
 
+username = input('Enter Username: ')
+password = getpass()
+
 device1 = {
 	'host': 'cisco3.lasthop.io',
-	'username': 'pyclass',
-	'password': getpass(),
+	'username': username,
+	'password': password,
 	'device_type': 'cisco_ios_ssh',
 	'session_log': 'dev1_session.txt'
 }
 
 device2 = {
 	'host': 'cisco4.lasthop.io',
-	'username': 'pyclass',
-	'password': getpass(),
+	'username': username,
+	'password': password,
 	'device_type': 'cisco_ios_ssh',
 	'session_log': 'dev2_session.txt'
 }
